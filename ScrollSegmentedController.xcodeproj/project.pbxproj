@@ -14,6 +14,10 @@
 		E92E009B20F34CB200283A5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E92E009920F34CB200283A5F /* LaunchScreen.storyboard */; };
 		E92E00A620F34CB200283A5F /* ScrollSegmentedControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92E00A520F34CB200283A5F /* ScrollSegmentedControllerTests.swift */; };
 		E92E00B120F34CB200283A5F /* ScrollSegmentedControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92E00B020F34CB200283A5F /* ScrollSegmentedControllerUITests.swift */; };
+		E92E00C020F34D3700283A5F /* MySegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92E00BF20F34D3700283A5F /* MySegmentedControl.swift */; };
+		E92E00C320F34DB500283A5F /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92E00C220F34DB500283A5F /* UIView+Frame.swift */; };
+		E92E00C620F34E3100283A5F /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92E00C520F34E3100283A5F /* ContainerViewController.swift */; };
+		E92E00C820F34E5900283A5F /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92E00C720F34E5900283A5F /* MyTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		E92E00AC20F34CB200283A5F /* ScrollSegmentedControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollSegmentedControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E92E00B020F34CB200283A5F /* ScrollSegmentedControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollSegmentedControllerUITests.swift; sourceTree = "<group>"; };
 		E92E00B220F34CB200283A5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E92E00BF20F34D3700283A5F /* MySegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySegmentedControl.swift; sourceTree = "<group>"; };
+		E92E00C220F34DB500283A5F /* UIView+Frame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Frame.swift"; sourceTree = "<group>"; };
+		E92E00C520F34E3100283A5F /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		E92E00C720F34E5900283A5F /* MyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +105,9 @@
 		E92E008F20F34CB200283A5F /* ScrollSegmentedController */ = {
 			isa = PBXGroup;
 			children = (
+				E92E00C420F34DDE00283A5F /* Controllers */,
+				E92E00C120F34D8700283A5F /* Extension */,
+				E92E00BE20F34CFB00283A5F /* SegmentedControl */,
 				E92E009020F34CB200283A5F /* AppDelegate.swift */,
 				E92E009220F34CB200283A5F /* ViewController.swift */,
 				E92E009420F34CB200283A5F /* Main.storyboard */,
@@ -123,6 +134,31 @@
 				E92E00B220F34CB200283A5F /* Info.plist */,
 			);
 			path = ScrollSegmentedControllerUITests;
+			sourceTree = "<group>";
+		};
+		E92E00BE20F34CFB00283A5F /* SegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				E92E00BF20F34D3700283A5F /* MySegmentedControl.swift */,
+			);
+			path = SegmentedControl;
+			sourceTree = "<group>";
+		};
+		E92E00C120F34D8700283A5F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E92E00C220F34DB500283A5F /* UIView+Frame.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E92E00C420F34DDE00283A5F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E92E00C520F34E3100283A5F /* ContainerViewController.swift */,
+				E92E00C720F34E5900283A5F /* MyTableViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +295,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E92E00C320F34DB500283A5F /* UIView+Frame.swift in Sources */,
+				E92E00C820F34E5900283A5F /* MyTableViewController.swift in Sources */,
+				E92E00C020F34D3700283A5F /* MySegmentedControl.swift in Sources */,
+				E92E00C620F34E3100283A5F /* ContainerViewController.swift in Sources */,
 				E92E009320F34CB200283A5F /* ViewController.swift in Sources */,
 				E92E009120F34CB200283A5F /* AppDelegate.swift in Sources */,
 			);
@@ -428,6 +468,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ScrollSegmentedController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.ScrollSegmentedController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -442,6 +483,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ScrollSegmentedController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.ScrollSegmentedController;
 				PRODUCT_NAME = "$(TARGET_NAME)";

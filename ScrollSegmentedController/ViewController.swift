@@ -20,6 +20,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func showContainer(_ sender: Any) {
+        let container = ContainerViewController()
+        self.navigationController?.pushViewController(container, animated: true)
+    }
 
 }
 
